@@ -38,8 +38,8 @@
 | Scenario | Description |
 |----------|-------------|
 | Multi-device Workers | Take notes at work, continue at home |
-| Developers | Store API keys, server addresses, config info |
-| Content Creators | Manage multiple account passwords, copy templates, asset links |
+| Developers | Store public documentation links, commands, non-sensitive configuration |
+| Content Creators | Manage account profile links, copy templates, asset links |
 | Quick Notes | Fast capture of ideas, to-dos, clipboard content |
 
 ---
@@ -206,3 +206,7 @@ Check out more of my projects and articles: **[doc.gudong.site](https://doc.gudo
 ---
 
 If this project helps you, please give it a ⭐ Star!
+
+## Storage boundary
+
+SlideNote is a notes app, not a password or API-key vault. It uses Chrome storage local and sync paths; Chrome sync can transfer the corresponding data through Google to other devices. Do not describe it as local-only. Keep passwords, tokens and keys in a dedicated credential manager. This documentation clarification does not add an encrypted vault.

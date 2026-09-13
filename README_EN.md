@@ -40,7 +40,7 @@
 
 | Use Case | Examples |
 |----------|----------|
-| Developers | API keys, server addresses,常用 commands, database credentials |
+| Developers | Public documentation links, common commands, non-sensitive configuration |
 | Multi-device Workers | Company Mac + Home Mac + Laptop — access the same fragments everywhere |
 | Content Creators | Account credentials, content templates, prompts for AI tools |
 | Daily Fragments | IP addresses, meeting notes, to-do lists, quick reminders |
@@ -131,7 +131,7 @@ SlideNote uses **Chrome Storage API** to store data:
 Chrome Storage Sync API has these limits:
 
 - Total capacity ~100KB (about 50,000 Chinese characters)
-- Suitable for: API Keys, commands, prompts, and similar fragmented information
+- Suitable for: Non-sensitive commands, prompts, and similar fragmented information
 
 SlideNote is a "sticky note", not a "notebook". For storing large amounts of content, consider using dedicated note apps like Notion or Obsidian.
 
@@ -248,3 +248,7 @@ Check out my other projects: **[doc.gudong.site](https://doc.gudong.site/)**
 ---
 
 If you find this project helpful, please give it a ⭐ Star!
+
+## Storage boundary
+
+SlideNote is a notes app, not a password or API-key vault. It uses Chrome storage local and sync paths; Chrome sync can transfer the corresponding data through Google to other devices. Do not describe it as local-only. Keep passwords, tokens and keys in a dedicated credential manager. This documentation clarification does not add an encrypted vault.
